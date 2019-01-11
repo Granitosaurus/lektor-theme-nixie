@@ -15,9 +15,6 @@
               <h4 class="post-date">{{ post.pub_date.strftime('%b %d, %Y') }}</h4>
             </div>
             <div class="post-summary"><p>{{ post.summary }}</p></div>
-            <div class="post-list-footer text-center">
-              <a href="{{ post|url }}">Read More</a>
-            </div>
           </div>
         </li>
       {% endfor %}
