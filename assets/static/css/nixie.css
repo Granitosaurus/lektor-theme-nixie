@@ -91,6 +91,12 @@ i {
     background-color: #F5F5F5;
     overflow: hidden;
     padding: 0 5px 0 5px;
+    margin: 0;
+}
+
+.post-header h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .post-summary, .post-content{
