@@ -4,12 +4,13 @@
   </div>
 </div>
 <footer class="footer text-center">
-  <p>🕷 Copyright &copy; 2019 {{ config.THEME_SETTINGS.name }} -
+  <p>🕷 Copyright &copy; 2019 {{ config.THEME_SETTINGS.name }}
+    {% if config.PROJECT.upstream %}<a target="_blank" href="https://{{ config.PROJECT.upstream }}">[source code]</a> {% endif %} -
     <span class="credit">
       Powered by
       <a target="_blank" href="https://www.getlektor.com">Lektor</a>
       and
-      <a target="_blank" href="https://github.com/granitosaurus/lektor-theme-nixie/">Nixie</a> theme. 🕷
+      <a target="_blank" href="https://github.com/granitosaurus/lektor-theme-nixie/">Nixie</a> theme 🕷
     </span>
   </p>
 </footer>

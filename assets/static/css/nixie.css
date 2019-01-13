@@ -109,6 +109,24 @@ i {
     padding-bottom: 5px;
 }
 
+.tags {
+    padding: 0;
+}
+.tag {
+    list-style: none;
+    display: inline;
+    padding: 2px 4px;
+    font-size: 90%;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+.tag a:focus, .tag a:hover, h1 a:focus, h1 a:hover{
+    text-decoration: none;
+}
+{
+
+}
+
 #post-list {
     list-style: none;
     padding-left: 0;

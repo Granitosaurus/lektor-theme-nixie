@@ -1,0 +1,6 @@
+{% from "macros/posts.html" import render_posts %}
+{% extends "layout.html" %}
+{% block content %}
+  <h1>Tag: {{ this.tag }}</h1>
+  {{ render_posts(this.items) }}
+{% endblock content %}
