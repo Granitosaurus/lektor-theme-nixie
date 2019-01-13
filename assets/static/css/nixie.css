@@ -112,6 +112,7 @@ i {
 .tags {
     padding: 0;
 }
+
 .tag {
     list-style: none;
     display: inline;
@@ -120,11 +121,9 @@ i {
     background-color: #f9f2f4;
     border-radius: 4px;
 }
+
 .tag a:focus, .tag a:hover, h1 a:focus, h1 a:hover{
     text-decoration: none;
-}
-{
-
 }
 
 #post-list {
