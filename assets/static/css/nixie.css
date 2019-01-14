@@ -72,8 +72,8 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 20px;
 }
 
-i {
-    margin: 10px 20px 10px 20px;
+i, hr{
+    margin: 5px 10px 5px 10px;
     color: #333;
 }
 
@@ -83,6 +83,17 @@ i {
 
 .post-date {
     float: right;
+}
+
+.post-content img{
+    display: block;
+    margin: auto;
+}
+
+.post-content figcaption {
+    text-align: center;
+    font-size: 80%;
+    margin: 10px 0;
 }
 
 .post-header {
@@ -150,7 +161,7 @@ i {
     display: block;
     width: 100%;
     padding: 10px;
-    height: 50px;
+    margin-top: 50px;
 }
 
 .push {

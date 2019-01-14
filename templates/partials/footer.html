@@ -1,16 +1,19 @@
-<div class="row">
-  <div class="col-xs-12 user-social text-center">
-    {% include "partials/social.html" %}
-  </div>
-</div>
 <footer class="footer text-center">
-  <p>🕷 Copyright &copy; 2019 {{ config.THEME_SETTINGS.name }}
-    {% if config.PROJECT.upstream %}<a target="_blank" href="https://{{ config.PROJECT.upstream }}">[source code]</a> {% endif %} -
+  <div class="row">
+    <div class="col-xs-12 user-social text-center">
+      {% include "partials/social.html" %}
+    </div>
+  </div>
+  <hr>
+  <p>Copyright &copy; 2019 {{ config.THEME_SETTINGS.name }}
+    {% if config.PROJECT.upstream %}<a target="_blank" href="https://{{ config.PROJECT.upstream }}">[source code]</a> {% endif %}
+  </p>
+  <p>
     <span class="credit">
       Powered by
       <a target="_blank" href="https://www.getlektor.com">Lektor</a>
       and
-      <a target="_blank" href="https://github.com/granitosaurus/lektor-theme-nixie/">Nixie</a> theme 🕷
+      <a target="_blank" href="https://github.com/granitosaurus/lektor-theme-nixie/">Nixie</a> theme
     </span>
   </p>
 </footer>

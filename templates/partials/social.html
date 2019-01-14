@@ -1,12 +1,18 @@
 {% if config.THEME_SETTINGS.github_id %}
-  <a href="https://github.com/{{ config.THEME_SETTINGS.github_id }}" title="GitHub"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+  <a href="https://github.com/{{ config.THEME_SETTINGS.github_id }}" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
 {% endif %}
 {% if config.THEME_SETTINGS.gitlab_id %}
-  <a href="https://gitlab.com/{{ config.THEME_SETTINGS.gitlab_id }}" title="GitLab"><i class="fa fa-gitlab fa-3x" aria-hidden="true"></i></a>
+  <a href="https://gitlab.com/{{ config.THEME_SETTINGS.gitlab_id }}" title="GitLab"><i class="fab fa-gitlab" aria-hidden="true"></i></a>
 {% endif %}
 {% if config.THEME_SETTINGS.stackoverflow_id %}
-  <a href="https://stackoverflow.com/users/{{ config.THEME_SETTINGS.stackoverflow_id }}?tab=profile" title="StackOverflow"><i class="fa fa-stack-exchange fa-3x" aria-hidden="true"></i></a>
+  <a href="https://stackoverflow.com/users/{{ config.THEME_SETTINGS.stackoverflow_id }}?tab=profile" title="StackOverflow"><i class="fab fa-stack-exchange" aria-hidden="true"></i></a>
 {% endif %}
 {% if config.THEME_SETTINGS.email %}
-  <a href="mailto:{{ config.THEME_SETTINGS.email }}" title="Email"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+  <a href="mailto:{{ config.THEME_SETTINGS.email }}" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+{% endif %}
+{% if config.THEME_SETTINGS.mastodon %}
+  <a href="https://{{ config.THEME_SETTINGS.mastodon }}" title="Mastodon"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
+{% endif %}
+{% if config.THEME_SETTINGS.diaspora %}
+  <a href="https://{{ config.THEME_SETTINGS.diaspora }}" title="Diaspora"><i class="fab fa-diaspora" aria-hidden="true"></i></a>
 {% endif %}
