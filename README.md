@@ -1,40 +1,58 @@
-# Nix
+# Nixie
 
-Nix is a simple, minimal theme for [Lektor](https://www.getlektor.com/) based in [Nix hugo theme](https://github.com/LordMathis/hugo-theme-nix)
+Nixie is a simple, minimal theme for [Lektor](https://www.getlektor.com/) made for floss blogging. 
 
 # Configuration
 
-Create a `404.html/contents.lr` content file pointing to 404.html, using a none model [see Lektor docs](https://www.getlektor.com/docs/guides/error-pages)
+### Create configs:
 
-Create a `contents.lr` content file pointing to index.html, using a none model
+* `configs/atom.ini`:
 
-Add lektor-disqus-comments plugin an configure it https://github.com/lektor/lektor-disqus-comments#lektor-disqus-comments
+    [blog]
+    name = <BLOG NAME>
+    source_path = /
+    url_path = /atom.xml
+    items = site.query('/')
+    item_model = blog-post
+    
+* `configs/`
 
-Add params in the `.lektorproject file`
+### Configure `.lektorproject` file:
 
-```ini
-[theme_settings]
-githubID = your_github
-gitlabId = your_gitlab
-twitterID = your_twitter
-codepenID = your_codepen
-linkedInID = your_linkedin
-googleplusID = your_googleplus
-facebookID = your_facebook
-instagramID = your_instagram
-telegramID = your_telegram
-name = your_name
-headerusername = username
-headerhostname = hostname
-email = your_email
-about = info_about_you
-profilepicture = profile_picture_asset_url
-googleanalytics = your_google_analytics_id
-slackURL = https://join.slack.com/...
-comments = yes
-```
+    [theme_settings]
+    name = super cool blog for cool people only
+    links = about,support # links in header to static pages
+    googleanalytics = UA-xxxxxx-x
+    gitlab_id = granitosaurus
+    github_id = granitosaurus
+    mastodon = mastodon.technology/@wraptile
+    diaspora = diasp.org/u/tinarg
+    email = granitosaurus@pm.me
+    stackoverflow_id = 3737009
 
-Add your proofile picture in the assets folder and set the path in `profilepicture` (e.g. `img/myprofilepicture.png`)
+    [project]
+    name = 🕷 crawl.blog
+    url = http://crawl.blog
+    themes = lektor-theme-nixie
+    upstream = gitlab.com/granitosaurus/crawl.blog
+    author = Bernardas Ališauskas
+    description = blog focused on web crawling, scraping and automation
+
+    [packages]
+    lektor-tags = 0.3
+    lektor-atom = 0.3
+    lektor-shortcodes = 0.2.5
+
+### Static files:
+
+Create some static images that are used in <meta> tags and favicon at `/assets/static/`
+    
+    favicon.png - favicon name
+    image.svg - default for <meta> images 
+
+# Writing blogs
+
+See example blog: TODO
 
 ## License
 

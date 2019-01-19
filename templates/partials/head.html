@@ -5,6 +5,14 @@
 <meta name="description" content="{{ this.summary | default(config.PROJECT.description)}}">
 <meta name="tags" content="{{ ','.join(this.tags) | default('')}}">
 <meta name="referer" content="origin">
+<meta name="image" content="{{ this.image | default('/static/image.svg' | asseturl)}}">
+<meta property="og:title" content="{{ this.title | default(config.PROJECT.name)}}" />
+<meta property="og:description" content="{{ this.summary | default(config.PROJECT.description)}}" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="{{ this.image | default('/static/image.svg' | asseturl)}}">
+{#<meta property="og:url" content="http://www.yakaferci.com/open-graph/" />#}
+{#<meta property="og:image" content="http://www.yakaferci.com/images/yakaferci_small.jpg">#}
+<link type="image/svg+xml" rel="icon" href="{{ '/static/favicon.png' | asseturl }}">
 
 <!-- JQuery -->
 {#<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>#}
