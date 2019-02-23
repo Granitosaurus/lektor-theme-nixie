@@ -5,18 +5,22 @@ Nixie is a simple, minimal theme for [Lektor](https://www.getlektor.com/) made f
 ![screenshot](screenshot2.png)
 ![screenshot](screenshot.png)
 
+Websites that use the theme:
+
+* [crawl.blog](http://crawl.blog) - a blog about web-crawling [source](https://gitlab.com/granitosaurus/crawl.blog)
+
 # Configuration
 
 ### Create configs:
 
 * `configs/atom.ini`:
 
-    [blog]
-    name = <BLOG NAME>
-    source_path = /
-    url_path = /atom.xml
-    items = site.query('/')
-    item_model = blog-post
+        [blog]
+        name = <BLOG NAME>
+        source_path = /
+        url_path = /atom.xml
+        items = site.query('/')
+        item_model = blog-post
     
 * `configs/`
 
