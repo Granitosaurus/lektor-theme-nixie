@@ -2,6 +2,8 @@
 
 Nixie is a simple, minimal theme for [Lektor](https://www.getlektor.com/) made for floss blogging. 
 
+![screenshot](screenshot.png)
+
 # Configuration
 
 ### Create configs:
